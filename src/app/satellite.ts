@@ -15,7 +15,11 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
-		return true;
+		let spacedebrisWarning = this.type.toLowerCase()
+		if(spacedebrisWarning === "space debris") {
+			return true;
+		} 
+		return false;
    }
 
 }
